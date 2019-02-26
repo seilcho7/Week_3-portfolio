@@ -1,16 +1,49 @@
 /* appy a natural box layout */
+html {
+    box-sizing: border-box;
+}
+
 h1 {
     font-size: 2em;
-
 }
 
 div {
     width: 400px;
     padding: 10px;
-    background: red;
-    color: white;
+    /* background: red;
+    color: white; */
 }
 
 *, *:before, *:after {
     box-sizing: inherit;
+}
+
+.hero-image {
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    background: black;
+}
+
+.title-text {
+    border: 3px solid red;
+}
+
+.nav {
+    border: 3px solid blue;
+    padding: 0;
+}
+
+.top-bar {
+    background: rgba(0, 0, 255, 0.7);
+}
+
+.top-bar .title-text,
+.top-bar .nav {
+    display: inline-block;
+}
+.nav li {
+    /* Inline makes them line up side by side, but gives us little control over spacing. */
+    /* display: inline; */
+    display: inline-block;
+    padding: 8px;
 }
