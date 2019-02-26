@@ -1,49 +1,58 @@
-/* appy a natural box layout */
+/* appy a natural box layout model to all elements, but allowing components to chage. */
 html {
     box-sizing: border-box;
-}
-
-h1 {
-    font-size: 2em;
-}
-
-div {
-    width: 400px;
-    padding: 10px;
-    /* background: red;
-    color: white; */
 }
 
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
+h1 {
+    font-size: 2em;
+}
+
 .hero-image {
     color: white;
     font-family: 'Noto Sans', sans-serif;
-    background: black;
+    /* background: black; */
+    background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,.3)), url(../images/coding.jpg);
+    background-size: cover;
+    height: 800px;
+    width: 100%;
 }
 
 .title-text {
-    border: 3px solid red;
+    padding-left: 20px;
 }
 
 .nav {
-    border: 3px solid blue;
-    padding: 0;
+    /* border: 3px solid blue; */
+    /* padding: 0; */
+    float: right;
+    margin-right: 10px;
 }
 
 .top-bar {
-    background: rgba(0, 0, 255, 0.7);
+    background: rgba(127, 127, 127, 0.4);
 }
 
 .top-bar .title-text,
 .top-bar .nav {
     display: inline-block;
 }
+
 .nav li {
     /* Inline makes them line up side by side, but gives us little control over spacing. */
     /* display: inline; */
     display: inline-block;
-    padding: 8px;
+    padding: 10px 20px;
+
+}
+
+.welcome-message {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 12px;
+    font-style: italic;
+    text-shadow: 3px 5px 2px #474747;
 }
