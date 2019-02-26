@@ -1,0 +1,16 @@
+/* appy a natural box layout */
+h1 {
+    font-size: 2em;
+
+}
+
+div {
+    width: 400px;
+    padding: 10px;
+    background: red;
+    color: white;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
